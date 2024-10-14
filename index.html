@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="/static/style.css" />
+    </head>
+
+    <body>
+        <div id="popup">
+            <form>
+                <label for="input_login">Логин (Ваша фамилия):</label><br />
+                <textarea id="input_login"></textarea><br>
+
+                <label for="input_password">Пароль (Любой):</label>
+                <textarea id="input_password"></textarea><br>
+
+                <label for="input_role">Роль:</label>
+                <textarea id="input_role"></textarea><br>
+
+                <button onclick="sendPayload(); return false;">Отправить</button
+                ><br />
+
+                <label for="output_token">Ваш токен:</label><br />
+                <textarea class="output_token" id="output_token"></textarea
+                ><br />
+
+                <label for="input_token"
+                    >Введите ваш токен, а затем проверьте его:</label
+                >
+                <textarea class="input_token" id="input_token"></textarea><br />
+
+                <button onclick="sendToken(); return false;">Проверить</button
+                ><br />
+
+                <label for="output_result">Ответ:</label>
+                <textarea class="output_result" id="output_result"></textarea
+                ><br />
+            </form>
+        </div>
+    </body>
+
+    <script src="/static/script.js"></script>
